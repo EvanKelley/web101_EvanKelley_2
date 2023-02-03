@@ -1,6 +1,8 @@
-.container{
-  height: 600px;
+body{
+  display: grid;
+  grid-template-columns: 40% 60%;
 }
+
 #wazbag-pic{
   height:400px;
   width: auto;
