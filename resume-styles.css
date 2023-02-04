@@ -1,9 +1,156 @@
 body{
+  background-color: white;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: 25% 25% 25% 25%;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 65px;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+}
+
+h3{
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 28px;
+}
+
+h4{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.headshot{
+  grid-column: 1/2;
+  grid-row: 1/3;
+  width: 100%;
 }
 
 #wazbag-pic{
-  height:400px;
-  width: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.name{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  border-bottom: 3px blue solid;
+  color: blue;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+.gobwiz{
+  margin-bottom:10%;
+}
+
+.contact-details{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background-color: blue;
+}
+
+.contact-h3{
+  text-align: center;
+}
+
+.cds{
+  margin: 10%;
+  color: white;
+}
+
+.work-references{
+  grid-column: 1/2;
+  grid-row: 4/5;
+  background-color: blue;
+}
+
+.work-h3{
+  text-align: center;
+}
+
+.wref{
+  margin: 10%;
+  color: white;
+}
+
+.summary-skills{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 20% 40% 40%;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  color: blue;
+  margin-left: 42px;
+}
+
+.work-history{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 20% 40% 40%;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  color: blue;
+  margin-left: 42px;
+}
+
+.work-history h3, .academic-history h3{
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.job-descriptions, .school-description{
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+
+.flex-work-history, .flex-academic-history{
+  grid-column: 2/3;
+  grid-row: 2/4;
+  color: blue;
+}
+
+.flex-work-history{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.summary-skills{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30% 70%;
+}
+
+.personal-summary{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.core-skills{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.academic-history{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 20% 40% 40%;
+  grid-column: 2/3;
+  grid-row: 4/5;
+  color: blue;
+  margin-left: 42px;
 }
