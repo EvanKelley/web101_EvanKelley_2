@@ -3,91 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href=".contact-page.css">
+  <link rel="stylesheet" href="./contact-page.css">
   <title>Contact Page</title>
 </head>
 
 <body>
-    <form action="results.html" method="GET" enctype="multipart/form-data">
+  <div class="main-container">
+    <form action="result.html" method="GET" enctype="multipart/form-data">
+
+    <h1>
+       Oh! Hello, I didn't hear you come in. 
+    </h1>
+
+
+    <div class="name-email">
       <div>
         <label for="name">Name</label>
         <input type="text" name="name" id="name" >
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" >
+      </div>
+    </div>  
+
+    <div class="comments">
+      <textarea minlength="20" maxlength="500" rows="7" cols ="25" placeholder="Comments..."></textarea>
     </div>
-    <div>
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" >
-    </div>
-    <div>
-      <label for="age">Age</label>
-      <input type="number" name="age" id="age" min="1" max="200" step="5">
-    </div>
-    <div>
+
+    <div class="bday">
+      Would you for some strange reason like me to send you an email on your birthday acknowledging that you were born that day?
+      <br>
+      <div>
+        <label for="yes-bday">Yes, I'm so alone</label>
+        <input type="checkbox" name="yes-bday" id="yes-bday">
+      </div>  
+      <div>
+        <label for="no-bday">No, that's weird</label>
+        <input type="checkbox" name="no-bday" id="no-bday">
+      </div>
       <label for="date">Birthdate</label>
-      <input type="date" name="date" id="date" min="2019-06-10">
+      <input type="date" name="date" id="date" min="1900-01-01">
     </div>
-    <div>
-      Favorite Food
+
+    <div class="hear-about">
+      How did you hear about me?
       <div>
-        <label for="banana">Banana</label>
-        <input type="checkbox" name="banana" id="banana">
+        <label for="classmate">Classmate</label>
+        <input type="checkbox" name="classmate" id="classmate">
       </div>
       <div>
-        <label for="apple">Apple</label>
-        <input type="checkbox" name="apple" id="apple">
-      </div>
-    </div>
-    <div>
-      Gender
-      <div>
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="male" value="male">
+        <label for="resume-submission">Resume Submission</label>
+        <input type="checkbox" name="resume-submission" id="resume-submission">
       </div>
       <div>
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="female" value="female">
+        <label for="linkedin">LinkedIn</label>
+        <input type="checkbox" name="linkedin" id="linkedin">
       </div>
       <div>
-        <label for="other">Other</label>
-        <input type="radio" name="gender" id="other" value="other">
+        <label for="coding-academy-rec">Coding Academy Rec</label>
+        <input type="checkbox" name="coding-academy-rec" id="coding-academy-rec">
       </div>
     </div>
-    <div>
-      <label for="eyeColor">Eye Color</label>
-      <select name="eyeColor" id="eyeColor" multiple>
-        <option value="Green">Green</option>
-        <option label="Red" value="Red"></option>
-      </select>
+
+    <div class="contact">
+      Would you like me to contact you?
+      <div>
+        <input type="radio" id="contact-yes" name="contact" value="Yes">
+        <label for="age1">Yeah</label><br>
+        <input type="radio" id="contact-no" name="contact" value="No">
+        <label for="age2">Nope</label><br>
+      </div>
     </div>
-    <div>
-      <label for="bio">Bio</label>
-      <textarea id="bio" name="bio"></textarea>
+
+    <input type="hidden" name="hidden" value="goblins rule">
+
+    <div class="buttons">
+      <button type="reset">Try Again</button>
+      <button type="submit">Submit</button>
     </div>
-    <input type="hidden" name="hidden" value="hi">
-    <div>
-      <label for="file">File</label>
-      <input id="file" type="file" name="file">
-    </div>
-    <div>
-      <label for="phone">Phone</label>
-      <input type="tel" name="phone" id="phone">
-    </div>
-    <div>
-      <label for="url">URL</label>
-      <input type="url" name="url" id="url">
-    </div>
-    <div>
-      <label for="color">Color</label>
-      <input type="color" name="color" id="color">
-    </div>
-    <div>
-      <label>
-        Password
-        <input type="password" name="password" >
-      </label>
-    </div>
-    <button type="reset">Reset</button>
-    <button type="submit">Submit</button>
+
+  </div>  
+
   </form>
-  <!-- <script src="scripts.js"></script> -->
+
+  <script src="contact-page.js"></script>
+
 </body>
 </html>

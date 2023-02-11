@@ -1,0 +1,36 @@
+.main-container{
+  height: max-content;
+}
+
+h1{
+  background-color: #25A795;
+}
+
+.name-email{
+  background-color: #754C8F;
+}
+
+.comments{
+  background-color: #EDB892;
+}
+
+.bday{
+  background-color: #E9E6BA;
+}
+
+.hear-about{
+  background-color: #804933;
+  color: white;
+}
+
+.contact{
+  background-color: #EB472F;
+}
+
+.buttons{
+  background-color: #ED8C4E;
+}
+
+textarea {
+  resize: none;
+}
