@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./contact-page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
   <title>Contact Page</title>
 </head>
 <body>
@@ -24,13 +30,13 @@
       </div>
       <div>
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" >
+        <input type="email" name="email" id="email" required>
       </div>
     </div>  
 
     <div class="comments">
       <div class="comment-section">
-        <textarea minlength="20" maxlength="500" rows="10" cols ="45" placeholder="Comments..."></textarea>
+        <textarea minlength="20" maxlength="500" rows="10" cols ="49" placeholder="Comments..."></textarea>
       </div>
     </div>
 
@@ -41,17 +47,15 @@
     <div class="bday">
       <div class="bday1-flex">
         Would you for some strange reason like me to send you an email on your birthday acknowledging that you were born that day?
-        <br>
-        <br>
       </div>
         <div class="bday2-flex">
-          <label for="yes-bday">Yes, I'm so alone</label>
           <input type="checkbox" name="yes-bday" id="yes-bday">
+          <label for="yes-bday">Yes, I'm so alone</label>
         </div>  
         <br>
         <div class="bday3-flex">
-          <label for="no-bday">No, that's weird</label>
           <input type="checkbox" name="no-bday" id="no-bday">
+          <label for="no-bday">No, that's weird</label>
         </div>
         <br>
         <div class="bday4-flex">
@@ -61,22 +65,24 @@
     </div>
 
     <div class="hear-about">
-      How did you hear about me?
-      <div>
-        <label for="classmate">Classmate</label>
+      <div class="hear-about-grid">
+        How did you hear about me?
+      </div>
+      <div class="classmate">
         <input type="checkbox" name="classmate" id="classmate">
+        <label for="classmate">Classmate</label>
       </div>
-      <div>
-        <label for="resume-submission">Resume Submission</label>
+      <div class="resume">
         <input type="checkbox" name="resume-submission" id="resume-submission">
+        <label for="resume-submission">Resume Submission</label>
       </div>
-      <div>
-        <label for="linkedin">LinkedIn</label>
+      <div class="linked-in">
         <input type="checkbox" name="linkedin" id="linkedin">
+        <label for="linkedin">LinkedIn</label>
       </div>
-      <div>
-        <label for="coding-academy-rec">Coding Academy Rec</label>
+      <div class="rec">
         <input type="checkbox" name="coding-academy-rec" id="coding-academy-rec">
+        <label for="coding-academy-rec">Coding Academy Rec</label>
       </div>
     </div>
 
@@ -84,9 +90,9 @@
       Would you like me to contact you?
       <div>
         <input type="radio" id="contact-yes" name="contact" value="Yes">
-        <label for="age1">Yeah</label><br>
+        <label for="yeah">Yeah</label><br>
         <input type="radio" id="contact-no" name="contact" value="No">
-        <label for="age2">Nope</label><br>
+        <label for="nope">Nope</label><br>
       </div>
     </div>
 

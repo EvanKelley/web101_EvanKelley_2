@@ -1,5 +1,10 @@
 .main-container{
   display: grid;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  border: 2px solid #990401;
+  border-radius: 12px;
+  padding: 5px;
 }
 
 @media (min-width: 576px) {
@@ -33,19 +38,22 @@
       "contact"
       "buttons";
   }
-  .image-1{
+  div.image-1{
     display: none;
   }
-  .image-2{
+  div.image-2{
     display: none;
   }
 }
 
 .heading{
+  font-family: 'Noto Serif', serif;
+  font-size: 22px;
   grid-area: heading;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 15px;
 }
 
 .name-email{
@@ -63,6 +71,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 15px;
 }
 
 .image-1{
@@ -75,29 +84,61 @@
 .bday{
   grid-area: bday;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .bday1-flex{
-  grid-column: 2/4;
+  grid-row: 2/5;
+  grid-column: 2/6;
+  padding-bottom: 25px;
 }
 
 .bday2-flex{
-  grid-column: 2/3;
+  grid-column: 2/4;
+  grid-row: 4/5;
 }
 
 .bday3-flex{
-  grid-column: 3/4;
-  grid-row: 2/3;
+  grid-column: 4/6;
+  grid-row: 4/5;
 }
 
 .bday4-flex{
-  grid-column: 2/4;
+  grid-column: 3/5;
+  grid-row: 6/7;
 }
 
 .hear-about{
   grid-area: hear-about;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
+}
+
+.hear-about-grid{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.classmate{
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.resume{
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.linked-in{
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+
+.rec{
+  grid-column: 2/3;
+  grid-row: 6/7;
 }
 
 .contact{
