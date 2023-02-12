@@ -3,21 +3,26 @@
 }
 
 @media (min-width: 576px) {
+  body {
+    background-color: #f36704;
+  }
   .main-container {
+    background-color: #00ab90;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
       "heading heading"
       "name-email image1"
       "comments image1"
       "bday image1"
-      "hear-about image2"
-      "contact image2"
-      "buttons image2";
+      "image2 hear-about"
+      "image2 contact"
+      "image2 buttons";
   }
 }
 
 @media (max-width: 575px) {
   .main-container {
+    background-color: #0889b9;
     grid-template-columns: 1fr;
     grid-template-areas: 
       "heading"
@@ -28,49 +33,86 @@
       "contact"
       "buttons";
   }
+  .image-1{
+    display: none;
+  }
+  .image-2{
+    display: none;
+  }
 }
 
 .heading{
-  background-color: #25A795;
   grid-area: heading;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .name-email{
-  background-color: #754C8F;
   grid-area: name-email;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .comments{
-  background-color: #EDB892;
   grid-area: comments;
+}
+
+.comment-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-1{
   grid-area: image1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bday{
-  background-color: #E9E6BA;
   grid-area: bday;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.bday1-flex{
+  grid-column: 2/4;
+}
+
+.bday2-flex{
+  grid-column: 2/3;
+}
+
+.bday3-flex{
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.bday4-flex{
+  grid-column: 2/4;
 }
 
 .hear-about{
-  background-color: #804933;
-  color: white;
   grid-area: hear-about;
 }
 
 .contact{
-  background-color: #EB472F;
   grid-area: contact;
 }
 
 .image-2{
   grid-area: image2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px 20px 15px;
 }
 
 .buttons{
-  background-color: #ED8C4E;
   grid-area: buttons; 
 }
 

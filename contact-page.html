@@ -29,7 +29,9 @@
     </div>  
 
     <div class="comments">
-      <textarea minlength="20" maxlength="500" rows="7" cols ="25" placeholder="Comments..."></textarea>
+      <div class="comment-section">
+        <textarea minlength="20" maxlength="500" rows="10" cols ="45" placeholder="Comments..."></textarea>
+      </div>
     </div>
 
     <div class="image-1">
@@ -37,18 +39,25 @@
     </div>
 
     <div class="bday">
-      Would you for some strange reason like me to send you an email on your birthday acknowledging that you were born that day?
-      <br>
-      <div>
-        <label for="yes-bday">Yes, I'm so alone</label>
-        <input type="checkbox" name="yes-bday" id="yes-bday">
-      </div>  
-      <div>
-        <label for="no-bday">No, that's weird</label>
-        <input type="checkbox" name="no-bday" id="no-bday">
+      <div class="bday1-flex">
+        Would you for some strange reason like me to send you an email on your birthday acknowledging that you were born that day?
+        <br>
+        <br>
       </div>
-      <label for="date">Birthdate</label>
-      <input type="date" name="date" id="date" min="1900-01-01">
+        <div class="bday2-flex">
+          <label for="yes-bday">Yes, I'm so alone</label>
+          <input type="checkbox" name="yes-bday" id="yes-bday">
+        </div>  
+        <br>
+        <div class="bday3-flex">
+          <label for="no-bday">No, that's weird</label>
+          <input type="checkbox" name="no-bday" id="no-bday">
+        </div>
+        <br>
+        <div class="bday4-flex">
+          <label for="date">Birthdate</label>
+          <input type="date" name="date" id="date" min="1900-01-01">
+        </div>
     </div>
 
     <div class="hear-about">
