@@ -143,6 +143,23 @@
 
 .contact{
   grid-area: contact;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.contact-title{
+  grid-column: 2/4;
+}
+
+.contact-yes{
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.contact-no{
+  grid-column: 3/4;
+  grid-row: 3/4
 }
 
 .image-2{
@@ -155,6 +172,16 @@
 
 .buttons{
   grid-area: buttons; 
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr 1fr;  
+}
+
+.button-try-again{
+  grid-column: 2/3;
+}
+
+.button-submit{
+  grid-column: 3/4;
 }
 
 textarea {
