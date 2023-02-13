@@ -68,6 +68,14 @@
   justify-content: center;
 }
 
+input:focus{
+  outline-color:#990401;
+}
+
+textarea{
+  outline-color:#990401;
+}
+
 .comments{
   grid-area: comments;
 }
