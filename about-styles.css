@@ -1,0 +1,75 @@
+body{
+  background-color: black;
+}
+
+.main-container{
+  display: grid;
+  background-color: #438687;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 50px;
+  border: 2px solid #ffba00;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+h1{
+  text-shadow: 2px 2px #ffba00;
+}
+
+@media (min-width: 576px) {
+  .main-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: 
+      "snail bug elephant"
+      "..... header ....."
+      "..... about ......"
+    ;
+  }
+}
+
+@media (max-width: 575px) {
+  .main-container {
+    padding: 0px 15px 15px 0px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "elephant"
+      "header"
+      "about"
+      "snail"
+    ;
+  }
+  div.image-middle{
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+
+.image-left{
+  grid-area: snail;
+}
+
+.image-middle{
+  grid-area: bug;
+}
+
+.image-right{
+  grid-area: elephant;
+}
+
+.header{
+  grid-area: header;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.short-and-sweet{
+  grid-area: about;
+  font-size: 20px;
+}
