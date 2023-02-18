@@ -6,7 +6,6 @@ body{
   display: grid;
   background-color: #438687;
   font-family: 'Roboto Mono', monospace;
-  font-size: 50px;
   border: 2px solid #ffba00;
   border-radius: 12px;
   padding: 5px;
@@ -14,23 +13,26 @@ body{
 
 h1{
   text-shadow: 2px 2px #ffba00;
+  font-size: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 576px) {
   .main-container {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
     grid-template-areas: 
-      "snail bug elephant"
-      "..... header ....."
-      "..... about ......"
+      "snail header elephant"
+      "about about about"
     ;
   }
 }
 
 @media (max-width: 575px) {
   .main-container {
-    padding: 0px 15px 15px 0px;
+    padding: 10px 15px 15px 10px;
     grid-template-columns: 1fr;
     grid-template-areas: 
       "elephant"
@@ -71,5 +73,6 @@ h1{
 
 .short-and-sweet{
   grid-area: about;
-  font-size: 20px;
+  font-size: 30px;
+  padding: 20px;
 }
