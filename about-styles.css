@@ -73,6 +73,7 @@ h1{
 
 .short-and-sweet{
   grid-area: about;
-  font-size: 30px;
+  font-size: 26px;
   padding: 20px;
+  text-indent: 20px;
 }
